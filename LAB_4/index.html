@@ -17,22 +17,22 @@
 
         <div class='itm-col-l' ng-controller='toBuyController as toBuyCntr'>
             <h2>car catalog</h2>
-            <div ng-if="toBuyCntr.toBuyItems.length == 0">
+            <div ng-if="toBuyCntr.markAndQuantity.length == 0">
                 there no items in list
             </div>
             <div class='itm-lst'>
                 <div class="itm-elem">
-                    <div ng-repeat="item in toBuyCntr.toBuyItems">
+                    <div ng-repeat="item in toBuyCntr.markAndQuantity">
                         {{item.name}}
                     </div>
                 </div>
                 <div class="itm-elem">
-                    <div ng-repeat="item in toBuyCntr.toBuyItems">
+                    <div ng-repeat="item in toBuyCntr.markAndQuantity">
                         {{item.amount}}
                     </div>
                 </div>
                 <div class="itm-elem">
-                    <div ng-repeat="item in toBuyCntr.toBuyItems">
+                    <div ng-repeat="item in toBuyCntr.markAndQuantity">
                         <button ng-click="toBuyCntr.addToBought($index)">add to basket</button>
                     </div>
                 </div>
