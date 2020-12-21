@@ -28,7 +28,7 @@
         var boughtItems = [];
 
         var toBuyItems = [
-            new Item('apple', 2),
+            new Item('Запорожець', 2),
             new Item('chips', 100),
             new Item('tomato', 4),
             new Item('cola', 100),
