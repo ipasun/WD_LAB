@@ -28,11 +28,11 @@
         var boughtItems = [];
 
         var toBuyItems = [
-            new Item('apple', 2),
-            new Item('chips', 100),
-            new Item('tomato', 4),
-            new Item('cola', 100),
-            new Item('bread', 1)
+            new Item('apple', 3),
+            new Item('egg', 8),
+            new Item('tomato', 1),
+            new Item('milk', 20),
+            new Item('bread', 5)
         ];
 
         service.addBoughtItem = function (shopItemId) {
