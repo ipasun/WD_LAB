@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="cars">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Car list</title>
+</head>
+
+<body ng-controller='carsController as $ctrl'>
+    <main class="container">
+        <h2>Car list</h2>
+        <div ng-if="toBuyCntr.toBuyItems.length == 0">
+            there no items in list
+        </div>
+        <aside class='list'>
+            <div ng-repeat="car in $ctrl.cars" ng-hide="car.isHide" class='item'>
+                {{car.mark}} - {{car.quantity}}
+                <div class="actions">
+                    <button ng-click="$ctrl.hide($index)">hide</button>
+                    <button ng-click="$ctrl.remove($index)">remove</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>

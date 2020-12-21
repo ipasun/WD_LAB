@@ -1,0 +1,11 @@
+.container {
+    width: 50%;
+    margin: auto;
+}
+.item {
+    padding: 15px 15px 15px 0;
+    display: flex;
+}
+.actions {
+    margin-left: 20px;
+}
